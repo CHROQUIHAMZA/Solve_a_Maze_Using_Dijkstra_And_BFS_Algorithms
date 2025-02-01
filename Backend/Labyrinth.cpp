@@ -22,7 +22,7 @@ void Labyrinth::Display()const {
 }
 vector<Point> Labyrinth::BFS()
 {
-    int directionTab[6][2] = { {-1, 0},{1, 0},{0, -1},{0, 1},{1, 1},{-1, -1} };
+    int directionTab[8][2] = { {-1, 0},{1, 0},{0, -1},{0, 1},{1, 1},{-1, -1},{1,-1},{-1,1} };
     vector<Point> steps;
     vector<Point> parent[rows * cols];
     queue<Point> temp;
@@ -80,7 +80,7 @@ vector<Point> Labyrinth::BFS()
 
 vector<Point> Labyrinth::Dijkstra() {
     int size = rows * cols;
-    int directionTab[6][2] = { {-1, 0}, {1, 0}, {0, -1}, {0, 1}, {1, 1}, {-1, -1} };
+    int directionTab[8][2] = { {-1, 0},{1, 0},{0, -1},{0, 1},{1, 1},{-1, -1},{1,-1},{-1,1} };
     vector<Point> steps;
     bool found = false;
     Point P(*startPoint);
