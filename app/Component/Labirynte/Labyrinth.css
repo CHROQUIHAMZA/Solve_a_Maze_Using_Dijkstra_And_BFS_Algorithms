@@ -1,0 +1,37 @@
+.labyrinth-grid {
+    display: grid;
+    grid-template-columns: repeat(24, 1fr); 
+    grid-template-rows: repeat(10, 1fr); 
+    gap: 2px;
+    width: 900px;
+    height: 450px;
+    margin: auto;
+}
+
+.cell {
+    cursor: pointer;
+    width: 100%;
+    height: 100%;
+    background-color: #f0f0f0;
+    border: 0.5px solid #ccc;
+}
+
+.wall {
+    background-color: #333; /* Couleur des murs */
+}
+
+.path {
+    background-color: #fff; /* Couleur des chemins */
+}
+.start {
+    background-color: green;
+}
+.end {
+    background-color: red;
+}
+.way{
+    background: gold;
+}
+.spath{
+    background: blue;
+}
